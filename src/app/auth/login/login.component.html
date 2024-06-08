@@ -1,0 +1,15 @@
+<div class="container">
+    <h2>Login</h2>
+    <form (ngSubmit)="onLogin(email.value, password.value)">
+      <mat-form-field>
+        <mat-label>Email</mat-label>
+        <input matInput type="email" #email required>
+      </mat-form-field>
+      <mat-form-field>
+        <mat-label>Password</mat-label>
+        <input matInput type="password" #password required>
+      </mat-form-field>
+      <button mat-raised-button type="submit">Login</button>
+    </form>
+  </div>
+  
